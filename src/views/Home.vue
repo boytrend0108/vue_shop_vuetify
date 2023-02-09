@@ -1,8 +1,13 @@
 <template>
   <div>
-    <h1>Hello Vue</h1>
+    <!-- <v-btn
+      color="primary"
+      @click.stop="drawer = !drawer"
+    >
+      Toggle
+   </v-btn> -->
   </div>
 </template>
 
-<script setup>
+<script >
 </script>
