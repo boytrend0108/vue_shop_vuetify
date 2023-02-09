@@ -1,11 +1,6 @@
 <template>
   <div>
-    <!-- <v-btn
-      color="primary"
-      @click.stop="drawer = !drawer"
-    >
-      Toggle
-   </v-btn> -->
+    <h1>Hello</h1>
   </div>
 </template>
 

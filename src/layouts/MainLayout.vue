@@ -1,14 +1,11 @@
 <template>
   <div>
-    <v-navigation-drawer v-model="drawer" temporary>
+    <v-app-bar>
+      <ToolBar/>
+    </v-app-bar>
+    <v-navigation-drawer v-model="DRAWER" temporary>
       Hellо
     </v-navigation-drawer>
-    <v-app-bar title="Application" app>
-      <v-btn color="primary" @click.stop="drawer = !drawer">
-        Toggle
-      </v-btn>
-    </v-app-bar>
-
     <v-main>
       <router-view />
     </v-main>
@@ -16,13 +13,18 @@
 </template>
 
 <script>
+import ToolBar from '@/components/ToolBar.vue';
+import {mapGetters} from 'vuex'
    export default {
     name: 'main-layout',
-    data () {
-      return {
-        drawer: null,
-      }
-    },
+    components:{
+    ToolBar,
+     },
+    computed:{
+      ...mapGetters([
+        'DRAWER'
+      ])
+    }
   }
 </script>
 
