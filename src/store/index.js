@@ -11,6 +11,7 @@ export default createStore({
   },
   mutations:{
     SWITCH_DRAWER(state){
+      console.log('click')
       state.drawer = !state.drawer
     }
   },
