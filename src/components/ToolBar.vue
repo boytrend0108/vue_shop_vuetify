@@ -1,7 +1,7 @@
  <template>
     <v-toolbar color="primary" class='w-100'>
       <v-app-bar-nav-icon
-      @click.stop="SWITCH_DRAWER"
+      @click.stop="test"
       >
       </v-app-bar-nav-icon>
       <v-toolbar-title>Online Store</v-toolbar-title>
@@ -21,7 +21,11 @@
 <script>
 
   export default {
-  
+     methods:{
+      test(){
+        console.log(this.$parent.$data.drawer)
+      }
+     }
   }
 </script>
 
