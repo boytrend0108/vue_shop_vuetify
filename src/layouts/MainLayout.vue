@@ -1,7 +1,5 @@
 <template>
   <div>
-   
-
     <v-navigation-drawer v-model="drawer" temporary class="pt-5">
       <v-list-item 
         v-for="(link, i) in links" 
@@ -9,7 +7,7 @@
         :value="link" 
         :to="link.url" 
         active-color="primary" 
-        class="list">
+      >
 
         <template v-slot:prepend>
           <v-icon :icon="link.icon"></v-icon>
@@ -21,16 +19,21 @@
 
     <v-app-bar>
       <v-toolbar color="primary" class='w-100'>
-        <v-app-bar-nav-icon @click.stop="this.drawer = !this.drawer">
+        <v-app-bar-nav-icon 
+          @click.stop="this.drawer = !this.drawer" 
+          class="hidden-md-and-up"
+          >
         </v-app-bar-nav-icon>
-        <v-toolbar-title>Online Store</v-toolbar-title>
+        <v-toolbar-title @click="this.$router.push('/')" class="title">
+            Online Store
+         </v-toolbar-title>
         <v-list-item 
             v-for="(link, i) in links" 
             :key="i" 
             :value="link" 
             :to="link.url" 
-            active-color="primary" 
-            class="list">
+            active-color="blue-lighten-4" 
+            class="list hidden-sm-and-down">
 
         <template v-slot:prepend>
           <v-icon :icon="link.icon" class="mr-2"></v-icon>
@@ -48,11 +51,11 @@
 </template>
 
 <script>
-import ToolBar from '@/components/ToolBar.vue';
+
    export default {
     name: 'main-layout',
     components:{
-    ToolBar,
+
      },
      data(){
       return{
@@ -61,14 +64,20 @@ import ToolBar from '@/components/ToolBar.vue';
         { text: 'Login', icon: 'mdi-account-box', url:'/login' },
         { text: 'Register', icon: 'mdi-account', url:'/register' },
         { text: 'Cart', icon: 'mdi-cart-outline', url:'/checkout' },
-        { text: 'New Product', icon: 'mdi-plus', url:'/new' },
-        { text: 'My Products', icon: 'mdi-list-box-outline', url:'/list' },
+        { text: 'New Product', icon: 'mdi-plus', url:'/new_product' },
+        { text: 'My Products', icon: 'mdi-list-box-outline', url:'/my_products' },
       ],
       }
      },
      
     computed:{
     
+    },
+
+    methods:{
+      test(){
+        this
+      }
     }
   }
 </script>
@@ -76,6 +85,11 @@ import ToolBar from '@/components/ToolBar.vue';
 <style scoped>
  .list{
   cursor: pointer;
+  height: 100%;
  }
+
+.title{
+  cursor: pointer;
+}
 </style>
 
