@@ -85,7 +85,7 @@
 
       onSubmit () {
         if (!this.form) return
-
+        console.log(this.password, this.email)
         this.loading = true
 
         setTimeout(() => (this.loading = false), 2000)
