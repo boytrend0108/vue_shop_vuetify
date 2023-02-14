@@ -44,7 +44,7 @@
       </v-toolbar>
     </v-app-bar>
 
-    <v-main>
+    <v-main class="h-screen d-flex justify-center align-center">
       <router-view />
     </v-main>
   </div>

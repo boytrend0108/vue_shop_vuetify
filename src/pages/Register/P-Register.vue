@@ -1,18 +1,24 @@
 <template>
   <v-container>
     <v-layout row>
-      <v-flex xl12 class="w-100">
-        <h1>Register
-        </h1>
-      </v-flex>
+      <v-row >
+      <v-col class="d-flex justify-center">
+       <c-register class="w-50"/>
+      </v-col>
+    </v-row>
     </v-layout>
   </v-container>
 </template>
 
 <script >
+import CRegister from './components/C-register.vue'
 export default{
+  components:{
+    CRegister
+  },
    data(){
     return{}
-   }
+  
+      }
 }
 </script>

@@ -1,9 +1,11 @@
 <template>
   <v-container>
     <v-layout row>
-      <v-flex xl12 class="w-100">
-        <h1>New Product</h1>
-      </v-flex>
+      <v-row class="mt-10">
+        <v-col class="d-flex justify-center">
+          <h1>New product</h1>
+        </v-col>
+      </v-row>
     </v-layout>
   </v-container>
     

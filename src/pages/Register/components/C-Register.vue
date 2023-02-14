@@ -14,6 +14,7 @@
           bg-color="white"
           clearable
           label="Email"
+          placeholder="Enter your email"
         ></v-text-field>
 
         <v-text-field
@@ -25,6 +26,17 @@
           bg-color="white"
           label="Password"
           placeholder="Enter your password"
+        ></v-text-field>
+
+        <v-text-field
+          v-model="confirm_password"
+          :readonly="loading"
+          :rules="[comparePassword]"  
+          clearable
+          counter="6"
+          bg-color="white"
+          label="Confirm Password"
+          placeholder="Repeat your password"
         ></v-text-field>
         <br>
         <v-btn
@@ -44,11 +56,12 @@
 
 <script>
   export default {
-    name: 'c-login',
+    name:'c-register',
     data: () => ({
       form: false,
       email: null,
-      password: null,
+      password: '',
+      confirm_password: null,
       loading: false,
       emailRules: [
         value => {
@@ -65,6 +78,11 @@
     }),
 
     methods: {
+      comparePassword(){
+        if(this.password ===  this.confirm_password) return true
+        return 'Password should match'
+      },
+
       onSubmit () {
         if (!this.form) return
 
@@ -72,9 +90,7 @@
 
         setTimeout(() => (this.loading = false), 2000)
       },
-      required (v) {
-        return !!v || 'Field is required'
-      },
+
     },
   }
 </script>

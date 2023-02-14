@@ -1,6 +1,6 @@
 <template>
   <v-container >
-    <v-row class="mt-10">
+    <v-row >
       <v-col class="d-flex justify-center">
        <login-form class="w-50" />
       </v-col>
