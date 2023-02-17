@@ -16,16 +16,16 @@
     </v-card-subtitle>
 
     <v-card-text>
-      <p class="font-weight-bold text-h6 text-blue-grey-darken-3">Price: {{ price }}</p>
+      <p class="font-weight-bold text-h6 text-blue-grey-darken-3">Price: ${{ price }}</p>
     </v-card-text>
 
     <v-card-actions>
       <v-spacer></v-spacer>
-      <v-btn color="orange">
+      <v-btn color="light-blue-darken-4">
         Share
       </v-btn>
 
-      <v-btn color="orange">
+      <v-btn color="light-blue-darken-4">
         Explore
       </v-btn>
     </v-card-actions>
