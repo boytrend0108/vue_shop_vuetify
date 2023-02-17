@@ -1,6 +1,6 @@
 <template>
   <v-card
-    class="mx-auto"
+   
     max-width="400"
   >
     <v-img
@@ -11,12 +11,12 @@
     >
     </v-img>
     <v-card-title class="text-h5">{{ title }}</v-card-title>
-    <v-card-subtitle class="pt-4">
+    <v-card-subtitle class="pt-4 text-body-1">
      {{description}}
     </v-card-subtitle>
 
     <v-card-text>
-      <p>Price: {{ price }}</p>
+      <p class="font-weight-bold text-h6 text-blue-grey-darken-3">Price: {{ price }}</p>
     </v-card-text>
 
     <v-card-actions>

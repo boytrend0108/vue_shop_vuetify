@@ -8,17 +8,20 @@
       </v-row>
     </v-container>
     <v-container>
-      <v-row>
-        <v-col v-for="product in PRODUCTS" :key="product.id" class="w-100">
+      <div 
+        class="w-100 d-flex justify-center align-center flex-wrap flex-grow-1" >
          <product-item 
+            v-for="product in PRODUCTS" 
+            :key="product.id" 
            :title="product.title"
            :src="product.imageSrc"
            :description="product.description"
            :price="product.price"
            :id="product.id"
+           class="ma-6"
          />
-        </v-col>
-      </v-row>
+      </div>
+    
     </v-container>
 </div>
 </template>
