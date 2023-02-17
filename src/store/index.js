@@ -16,7 +16,7 @@ export default createStore({
         imageSrc:'https://via.placeholder.com/728x300.png',
       },
       {
-        id:'1',
+        id:'2',
         title:'Ноутбук Lenovo V17 (Intel))',
         vendor:'Lenovo',
         color:'black',
@@ -27,7 +27,7 @@ export default createStore({
         imageSrc:'https://via.placeholder.com/728x300.png',
       },
       {
-        id:'1',
+        id:'3',
         title:'Ноутбук Lenovo V14 (2nd Gen, AMD)',
         vendor:'Lenovo',
         color:'black',

@@ -13,12 +13,12 @@
          <product-item 
             v-for="product in PRODUCTS" 
             :key="product.id" 
-           :title="product.title"
-           :src="product.imageSrc"
-           :description="product.description"
-           :price="product.price"
-           :id="product.id"
-           class="ma-6"
+            :title="product.title"
+            :src="product.imageSrc"
+            :description="product.description"
+            :price="product.price"
+            :id="product.id"
+            class="ma-6"
          />
       </div>
     
