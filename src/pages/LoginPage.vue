@@ -9,10 +9,10 @@
 </template>
 
 <script >
-import loginForm from './components/C-Login'
+import LoginForm from '@/components/Forms/LoginForm'
 export default{
   components:{
-    loginForm
+    LoginForm
   },
 
    data(){

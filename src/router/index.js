@@ -5,32 +5,32 @@ const routes = [
   {
     path: '/',
     meta: 'main-layout',
-    component: () => import('@/pages/Home/P-Home.vue'),
+    component: () => import('@/pages/HomePage.vue'),
   },
   {
     path: '/login',
     meta: 'main-layout',
-    component: () => import('@/pages/Login/P-Login.vue'),
+    component: () => import('@/pages/LoginPage.vue'),
   },
   {
     path: '/register',
     meta: 'main-layout',
-    component: () => import('@/pages/Register/P-Register.vue'),
+    component: () => import('@/pages/RegisterPage.vue'),
   },
   {
     path: '/checkout',
     meta: 'main-layout',
-    component: () => import('@/pages/Checkout/P-Checkout.vue'),
+    component: () => import('@/pages/CheckoutPage.vue'),
   },
   {
     path: '/my_products',
     meta: 'main-layout',
-    component: () => import('@/pages/MyProducts/P-MyProducts.vue'),
+    component: () => import('@/pages/MyProductsPage.vue'),
   },
   {
     path: '/new_product',
     meta: 'main-layout',
-    component: () => import('@/pages/NewProduct/P-NewProduct.vue'),
+    component: () => import('@/pages/NewProductPage.vue'),
   },
 ] 
 

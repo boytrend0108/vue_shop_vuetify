@@ -44,7 +44,7 @@
 
 <script>
   export default {
-    name: 'c-login',
+    name: 'login-form',
     data: () => ({
       form: false,
       email: null,

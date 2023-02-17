@@ -3,7 +3,7 @@
     <v-layout row>
       <v-row >
       <v-col class="d-flex justify-center">
-       <c-register class="w-50"/>
+       <register-form class="w-50"/>
       </v-col>
     </v-row>
     </v-layout>
@@ -11,10 +11,10 @@
 </template>
 
 <script >
-import CRegister from './components/C-register.vue'
+import RegisterForm from '@/components/Forms/RegisterForm';
 export default{
   components:{
-    CRegister
+    RegisterForm
   },
    data(){
     return{}

@@ -56,7 +56,7 @@
 
 <script>
   export default {
-    name:'c-register',
+    name:'register-form',
     data: () => ({
       form: false,
       email: null,
