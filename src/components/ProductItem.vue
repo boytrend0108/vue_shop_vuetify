@@ -1,7 +1,7 @@
 <template>
   <v-card
-   
-    max-width="400"
+    max-width="340"
+    class="pb-4"
   >
   <router-link :to="`/product/`+ id">
     <v-img
